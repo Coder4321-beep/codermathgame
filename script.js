@@ -27,13 +27,13 @@ function startGame(timer) {
   updateTimer();
   generateQuestion();
   timerInterval = setInterval(() => {
-    timeRemaining -= 1;
+    timeRemaining -= 0.1;
     updateTimer();
     if (timeRemaining <= 0) {
       clearInterval(timerInterval);
       window.location.href = "gamerOver.html";
     }
-  }, 100);
+  }, 10);
 }
 
 function updateTimer() {
