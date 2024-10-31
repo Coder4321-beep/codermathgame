@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Matemática</title>
+    <style>
+        /* Estilos globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilização da página */
+        body {
+            background-image: linear-gradient(#FFA24F, #FBFF51);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #e0e0e0;
+        }
+
+        /* Estilo do container */
+        .container {
+            text-align: center;
+            max-width: 95vw;
+            height: 95vh;
+            padding: 30px;
+            background: #DCFF64;
+            box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            border: solid 1px black;
+        }
+
+        /* Título */
+        h1 {
+            font-size: 2.5em;
+            color: #6B8DFF;
+            margin-bottom: 15px;
+        }
+
+        /* Descrição */
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #a0a0a0;
+        }
+
+        /* Botão de iniciar */
+        .start-btn {
+            font-size: 1.2em;
+            padding: 15px 30px;
+            color: white;
+            background: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .start-btn:hover {
+            background-color: #43a047;
+        }
+
+        /* Estilo do rodapé */
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #757575;
+        }
+
+        /* Animação de brilho no botão */
+        .start-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .start-btn:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -500%;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: skewX(-25deg);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>MathGame</h1>
+        <br><br><br>
+        <p>Desafie suas habilidades matemáticas e teste sua velocidade com esse jogo divertido! Resolva o maior número de questões possível antes que o tempo acabe.</p>
+        <br><br><br><br><br><br>
+        <a href="jogo.html" class="start-btn">Iniciar Jogo</a>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="footer">© 2023 Jogo de Matemática</div>
+    </div>
+
+</body>
+</html>

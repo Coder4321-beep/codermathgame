@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Jogo de Matemática</h1>
+        <div class="points">
+          <div id="point">Pontuação: 0</div>
+        <div id="bestPoint">Maior: 0</div>
+        </div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div class="timer-container">
+            <div id="timer"></div>
+        </div>
+        <button class="reload" onclick="startGame(-0.1)">Pular</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
