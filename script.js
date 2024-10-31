@@ -1,5 +1,5 @@
 let correctAnswer;
-let infinityMode = true;
+let infinityMode = false;
 let timerInterval;
 let timeRemaining = 100; // 100%
 const point = document.getElementById("point");
